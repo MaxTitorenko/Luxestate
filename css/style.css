@@ -184,8 +184,6 @@ header{
 
 .statistics-blocks{
     flex-wrap: wrap;
-    row-gap: 1em;
-    column-gap: 1em;
 }
 
 .number{
@@ -204,6 +202,8 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: .1em;
+    margin-bottom: .5em;
+    margin-right: .5em;
 }
 
 .statistics-header{
@@ -234,7 +234,6 @@ header{
 .apparments-blocks{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 2em;
     margin-bottom: 3em;
     justify-content: space-between;
 }
@@ -244,6 +243,11 @@ header{
     width: 31%;
     min-height: 510px;
     box-shadow: .3em .3em .3em .3em rgba(121, 121, 121, 0.1);
+    margin-bottom: 2em;
+}
+
+.appartments-block:last-child{
+    margin-bottom: 0;
 }
 
 .block-image{
@@ -855,22 +859,4 @@ footer{
         margin-bottom: 0;
         margin-top: 0;
     }
-}
-
-@supports not (row-gap: auto){
-    .statistics-blocks{
-        margin-bottom: 1em;
-    }
-
-    .apparments-blocks{
-        margin-bottom: 2em;
-    }
-
-}
-
-@supports not (column-gap: auto){
-    .statistics-blocks{
-        margin-right: 1em;
-    }
-    
 }

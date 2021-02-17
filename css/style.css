@@ -805,7 +805,7 @@ footer{
 }
 
 
-@supports not (row-gap){
+@supports not (row-gap: auto){
     .statistics-blocks{
         margin-bottom: 1em;
     }
@@ -816,7 +816,7 @@ footer{
 
 }
 
-@supports not (column-gap){
+@supports not (column-gap: auto){
     .statistics-blocks{
         margin-right: 1em;
     }

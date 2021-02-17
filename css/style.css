@@ -803,3 +803,22 @@ footer{
         margin-bottom: 2em;
     }
 }
+
+
+@supports not (row-gap){
+    .statistics-blocks{
+        margin-bottom: 1em;
+    }
+
+    .apparments-blocks{
+        margin-bottom: 2em;
+    }
+
+}
+
+@supports not (column-gap){
+    .statistics-blocks{
+        margin-right: 1em;
+    }
+    
+}

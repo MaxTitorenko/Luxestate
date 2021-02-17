@@ -186,8 +186,6 @@ header{
     flex-wrap: wrap;
     row-gap: 1em;
     column-gap: 1em;
-    --webkit-row-gap: 1em;
-    --webkit-column-gap: 1em;
 }
 
 .number{
@@ -237,7 +235,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     row-gap: 2em;
-    --webkit-row-gap: 2em;
     margin-bottom: 3em;
     justify-content: space-between;
 }
@@ -797,13 +794,68 @@ footer{
     }
 }
 
-@media (max-width:650px){
+@media (max-width: 650px){
     .how-block{
         width: 100%;
         margin-bottom: 2em;
     }
 }
 
+@media (max-width: 530px){
+    .header-main-content{
+        background-position: 0 ;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 490px){
+    .email{
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px){
+    .apps-button{
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 430px){
+    .block{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .contacts{
+        display: none;
+    }
+
+    .add-location{
+        display: none;
+    }
+
+    .apps-bottom{
+        flex-direction: column;
+    }
+
+    .apps-bottom .form{
+        margin-bottom: 1em;
+    }
+    
+    .add-column{
+        margin-bottom: 0;
+        justify-content:flex-start;
+    }
+
+    .add-image, .add-text{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
 
 @supports not (row-gap: auto){
     .statistics-blocks{

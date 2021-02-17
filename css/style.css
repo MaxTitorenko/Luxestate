@@ -186,6 +186,8 @@ header{
     flex-wrap: wrap;
     row-gap: 1em;
     column-gap: 1em;
+    --webkit-row-gap: 1em;
+    --webkit-column-gap: 1em;
 }
 
 .number{
@@ -235,6 +237,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     row-gap: 2em;
+    --webkit-row-gap: 2em;
     margin-bottom: 3em;
     justify-content: space-between;
 }

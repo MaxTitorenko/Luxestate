@@ -246,10 +246,6 @@ header{
     margin-bottom: 2em;
 }
 
-.appartments-block:last-child{
-    margin-bottom: 0;
-}
-
 .block-image{
     width: 100%;
     height: 100%;
